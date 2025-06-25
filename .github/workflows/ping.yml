@@ -2,7 +2,7 @@ name: Keep Render Alive
 
 on:
   schedule:
-    - cron: "*/10 * * * *"  # Every 10 minutes
+    - cron: "*/7 * * * *"  # Every 7 minutes
   workflow_dispatch:        # Optional: manual trigger
 
 jobs:
@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Ping Render
-        run: curl -s https://double-bluff.vercel.app > /dev/null
+        run: curl -s https://double-bluff.onrender.com > /dev/null
